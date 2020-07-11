@@ -30,7 +30,7 @@ public class ClientHandler {
                                 String[] tokens = str.split(" ");
 
                                 if(server.isLogin(tokens[1])){
-                                    sendMsg("Данный логин занят");
+                                    sendMsg("Данный логин занят!");
                                     break;
                                 }
 

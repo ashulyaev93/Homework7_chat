@@ -58,7 +58,7 @@ public class Server {
         }
     }
 
-    public void sendPrivateMsgByNick(String nickSender, String msg) { //личное сообщение;
+    public void sendPrivateMsgByNick(String nickSender, String msg) { //личное сообщение
         for (ClientHandler client : clients) {
             if (msg.indexOf(client.getNick()) == 1 || client.getNick().equals(nickSender)) {
                 // можно из msg вырезать '@nick1 '
@@ -67,7 +67,7 @@ public class Server {
         }
     }
 
-    public boolean isLogin(String login) {
+    public boolean isLogin(String login) { //метод для логина;
         for (ClientHandler client : clients) {
             if (client.getLogin().equals(login)){
                 return true;
